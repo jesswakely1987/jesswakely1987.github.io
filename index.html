@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
@@ -7,7 +7,7 @@
 <!-- PRIMARY META TAGS -->
 <title>Jess Wakely | ADHD Women's Healer, Coach & Mentor | Online</title>
 <meta name="title" content="Jess Wakely | ADHD Women's Healer, Coach & Mentor | Online"/>
-<meta name="description" content="Healing, coaching and mentorship for ADHD women ready to break free from past trauma, nervous system dysregulation and self-doubt. Work with Jess online from anywhere in the world."/>
+<meta name="description" content="For women with ADHD who have spent their lives searching for the real answer. Deep healing, coaching and mentorship that goes to the root. Work with Jess online from anywhere in the world."/>
 <meta name="keywords" content="ADHD women coach, ADHD healing, trauma healing for women, nervous system regulation, energy healing, inner child healing, subconscious clearing, EFT, ADHD mentor, online healing coach, women's coaching, spiritual coaching, cycle breaker healing"/>
 <meta name="author" content="Jess Wakely"/>
 <meta name="robots" content="index, follow"/>
@@ -17,7 +17,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://www.jesswakely.com/"/>
 <meta property="og:title" content="Jess Wakely | ADHD Women's Healer, Coach & Mentor"/>
-<meta property="og:description" content="For women who have done the work and still feel something beneath the surface waiting to shift. Deep healing, coaching and mentorship online with Jess Wakely."/>
+<meta property="og:description" content="For women with ADHD who have spent their lives searching for the real answer. Deep healing, coaching and mentorship that goes to the root, not the surface."/>
 <meta property="og:image" content="https://www.jesswakely.com/jess-og-image.jpg"/>
 <meta property="og:locale" content="en_GB"/>
 <meta property="og:site_name" content="Jess Wakely"/>
@@ -26,7 +26,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:url" content="https://www.jesswakely.com/"/>
 <meta name="twitter:title" content="Jess Wakely | ADHD Women's Healer, Coach & Mentor"/>
-<meta name="twitter:description" content="For women who have done the work and still feel something beneath the surface waiting to shift. Deep healing, coaching and mentorship online."/>
+<meta name="twitter:description" content="For women with ADHD who have spent their lives searching for the real answer. Deep healing, coaching and mentorship that goes to the root."/>
 <meta name="twitter:image" content="https://www.jesswakely.com/jess-og-image.jpg"/>
 
 <!-- STRUCTURED DATA (tells Google exactly what your business is) -->
@@ -53,7 +53,7 @@
       "@type": "Offer",
       "name": "Igniting the Inner Fire",
       "description": "8 week healing and coaching transformation programme online.",
-      "price": "555",
+      "price": "444",
       "priceCurrency": "GBP"
     },
     {
@@ -88,8 +88,6 @@
 html{scroll-behavior:smooth;}
 body{background:var(--off-white);color:var(--charcoal);font-family:'Plus Jakarta Sans',sans-serif;font-weight:300;overflow-x:hidden;font-size:16px;}
 
-/* ── BIONIC TEXT ── */
-b.bio{font-weight:600;color:inherit;}
 
 /* ── CURSOR GLOW ── */
 .cursor-glow{pointer-events:none;position:fixed;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(122,158,126,0.07) 0%,transparent 70%);transform:translate(-50%,-50%);z-index:9999;transition:opacity 0.3s;top:0;left:0;}
@@ -360,6 +358,98 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
   .cta-band{border-radius:40px 40px 0 0;}
   footer{grid-template-columns:1fr;text-align:center;padding:44px 24px;}.f-right{justify-content:center;margin-top:14px;}
 }
+
+/* ══════════════════════════════════════════
+   MOBILE — comprehensive responsive layer
+   ══════════════════════════════════════════ */
+
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;z-index:200;}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--charcoal);border-radius:2px;transition:all 0.3s;}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-toggle.open span:nth-child(2){opacity:0;}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+@media(max-width:767px){
+  body{font-size:15px;}
+  nav{padding:16px 20px;}
+  .nav-toggle{display:flex;}
+  .nav-links{
+    position:fixed;top:0;left:0;right:0;bottom:0;
+    background:rgba(248,248,245,0.97);
+    backdrop-filter:blur(24px);
+    flex-direction:column;
+    align-items:center;justify-content:center;
+    gap:32px;
+    opacity:0;pointer-events:none;
+    transition:opacity 0.35s;
+    z-index:150;
+  }
+  .nav-links.open{opacity:1;pointer-events:all;}
+  .nav-links a,.nav-links span.btn{font-size:0.75rem;letter-spacing:0.22em;}
+  .nav-links .btn{padding:14px 36px;}
+  .cursor-glow{display:none;}
+  .hero{grid-template-columns:1fr;min-height:auto;padding-top:70px;}
+  .hero-breath{grid-column:1;grid-row:1;opacity:0.25;position:absolute;top:60px;left:50%;transform:translateX(-50%);width:280px;height:280px;}
+  .bc-svg{width:280px;height:280px;}
+  .hero-l{grid-column:1;grid-row:1;padding:80px 24px 32px;position:relative;z-index:2;text-align:center;}
+  .hero-title{font-size:clamp(2.4rem,9vw,3.6rem);margin-bottom:20px;}
+  .hero-sub{font-size:0.95rem;line-height:1.95;margin-bottom:36px;max-width:100%;}
+  .hero-btns{justify-content:center;gap:14px;}
+  .hero-r{grid-column:1;grid-row:2;padding:0 40px 60px;justify-content:center;}
+  .arch-frame{width:240px;}
+  .arch-photo{height:320px;}
+  .arch-halo,.arch-halo-2{display:none;}
+  .belief{grid-template-columns:1fr;padding:56px 24px;gap:36px;text-align:center;}
+  .b-item+.b-item::before{display:none;}
+  .b-item p{font-size:1.15rem;}
+  .intro-grid{grid-template-columns:1fr;padding:72px 24px;gap:40px;}
+  .intro-arch-wrap{order:-1;}
+  .intro-arch{max-width:200px;height:300px;margin:0 auto;}
+  .intro-heading{font-size:clamp(1.8rem,6vw,2.8rem);}
+  .intro-p{font-size:0.95rem;}
+  .pkg-section{padding:60px 20px 80px;}
+  .pkg-section::before{display:none;}
+  .pkg-row{grid-template-columns:40px 1fr;padding:22px 20px;gap:14px;}
+  .pkg-n{font-size:2.2rem;}
+  .pkg-name{font-size:clamp(1.2rem,4.5vw,1.6rem);}
+  .pkg-rhs{display:none;}
+  .pkg-drop-inner{grid-template-columns:40px 1fr;padding:0 20px 28px;gap:14px;}
+  .pkg-book{grid-column:2;flex-direction:column;gap:10px;align-items:stretch;}
+  .pkg-book .btn,.pkg-book .btn-pay{text-align:center;padding:14px 20px;font-size:0.6rem;}
+  .pkg-drop-text p{font-size:0.92rem;line-height:1.9;}
+  .gallery-section{padding:48px 20px;}
+  .gallery-grid{grid-template-columns:1fr;gap:14px;}
+  .g-arch:nth-child(1){height:220px;}
+  .g-arch:nth-child(2){height:180px;}
+  .g-arch:nth-child(3){height:200px;}
+  .fol-divider{padding:40px 24px;}
+  .testi-section{padding:80px 20px;}
+  .testi-grid{grid-template-columns:1fr;gap:16px;}
+  .testi{padding:32px 24px;}
+  .testi-strip{padding:40px 20px;}
+  .pull-quote{padding:80px 24px;}
+  .pull-text{font-size:clamp(1.4rem,5.5vw,2rem);}
+  .pull-sri{width:280px;height:280px;}
+  .cta-band{border-radius:32px 32px 0 0;padding:80px 24px;}
+  .cta-title{font-size:clamp(2rem,8vw,3.5rem);}
+  .cta-btns{flex-direction:column;align-items:center;gap:14px;}
+  .cta-btns .btn,.cta-btns .btn-outline{width:100%;max-width:300px;text-align:center;}
+  footer{grid-template-columns:1fr;text-align:center;padding:40px 20px;gap:20px;}
+  .f-right{justify-content:center;margin-top:10px;}
+  .story-modal{padding:40px 24px;border-radius:24px;}
+  .modal-inner{padding:40px 24px;}
+  .btn{padding:14px 32px;font-size:0.6rem;}
+  .btn-outline{padding:14px 32px;font-size:0.6rem;}
+}
+
+@media(max-width:399px){
+  .hero-title{font-size:2.1rem;}
+  .arch-frame{width:200px;}
+  .arch-photo{height:280px;}
+  .pkg-row{grid-template-columns:32px 1fr;padding:18px 16px;}
+  .pkg-drop-inner{grid-template-columns:32px 1fr;padding:0 16px 24px;}
+  .pkg-n{font-size:1.9rem;}
+}
 </style>
 </head>
 <body>
@@ -369,10 +459,14 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
 <!-- NAV -->
 <nav id="nav" aria-label="Main navigation">
   <span class="nav-logo">Jess Wakely</span>
-  <ul class="nav-links">
+  <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
     <li><a href="#">Home</a></li>
     <li><a href="#packages">Work With Me</a></li>
-    <li><a href="#">About</a></li>
+    <li><a href="membership.html">Membership</a></li>
+    <li><a href="#" onclick="openStory();return false;">About</a></li>
     <li><span class="btn" onclick="openM('healing')" style="cursor:pointer;">Book Now</span></li>
   </ul>
 </nav>
@@ -395,10 +489,10 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
   <div class="hero-l">
     <p class="ey" style="opacity:0;animation:fadeUp 1s 0.2s forwards;">Healing · Coaching · Mentorship</p>
     <h1 class="hero-title">
-      The woman you<br/>are becoming is<br/><em>waiting</em> <span class="gw">for you.</span>
+      Your whole life you knew<br/>something was different.<br/><em>You were</em> <span class="gw">right.</span>
     </h1>
     <p class="hero-sub">
-      <b class="bio">Fo</b>r <b class="bio">wome</b>n <b class="bio">wh</b>o <b class="bio">hav</b>e <b class="bio">don</b>e <b class="bio">th</b>e <b class="bio">wor</b>k <b class="bio">an</b>d <b class="bio">stil</b>l <b class="bio">fee</b>l <b class="bio">somethin</b>g <b class="bio">beneat</b>h <b class="bio">th</b>e <b class="bio">surfac</b>e <b class="bio">waitin</b>g <b class="bio">t</b>o <b class="bio">shif</b>t.
+Your body was telling you something long before you had words for it. The exhaustion. The intensity. The sense of being fundamentally different from everyone around you. This is where the real answers begin.
     </p>
     <div class="hero-btns">
       <span class="btn" onclick="document.getElementById('packages').scrollIntoView({behavior:'smooth'})">Explore Packages</span>
@@ -442,7 +536,7 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
   </svg>
   <div class="belief fi">
     <div class="b-item d1">
-      <p>Knowledge alone does not heal you.</p>
+      <p>The answers your body was searching for could never be found on the surface.</p>
       <span>The foundation</span>
     </div>
     <div class="b-item d2">
@@ -468,14 +562,14 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
   </div>
   <div>
     <p class="ey">The work</p>
-    <h2 class="intro-heading">You have done<br/>so much already.<br/><em>Something deeper awaits.</em></h2>
+    <h2 class="intro-heading">You have been searching<br/>your whole life.<br/><em>The root is here.</em></h2>
     <p class="intro-p">
-      <b class="bio">Fo</b>r <b class="bio">year</b>s <b class="bio">I wa</b>s <b class="bio">dee</b>p <b class="bio">i</b>n <b class="bio">th</b>e <b class="bio">sel</b>f <b class="bio">developmen</b>t <b class="bio">worl</b>d. <b class="bio">Book</b>s, <b class="bio">podcast</b>s, <b class="bio">al</b>l <b class="bio">th</b>e <b class="bio">righ</b>t <b class="bio">habit</b>s. <b class="bio">Bu</b>t <b class="bio">I wa</b>s <b class="bio">stil</b>l <b class="bio">replayin</b>g <b class="bio">th</b>e <b class="bio">pas</b>t <b class="bio">an</b>d <b class="bio">feelin</b>g <b class="bio">stuck.</b>
+You felt it long before anyone had a name for it. Your brain running on overdrive. Your body always exhausted. A sense that you were fundamentally different from everyone around you but you could not explain why.
     </p>
     <p class="intro-p">
-      <b class="bio">Unprocesse</b>d <b class="bio">emotion</b>s <b class="bio">sta</b>y <b class="bio">trappe</b>d <b class="bio">i</b>n <b class="bio">th</b>e <b class="bio">bod</b>y. <b class="bio">Ol</b>d <b class="bio">traum</b>a <b class="bio">ca</b>n <b class="bio">si</b>t <b class="bio">i</b>n <b class="bio">th</b>e <b class="bio">nervou</b>s <b class="bio">syste</b>m <b class="bio">fo</b>r <b class="bio">year</b>s, <b class="bio">showin</b>g <b class="bio">u</b>p <b class="bio">a</b>s <b class="bio">overthinking</b>, <b class="bio">procrastinatio</b>n, <b class="bio">o</b>r <b class="bio">feelin</b>g <b class="bio">stuc</b>k <b class="bio">i</b>n <b class="bio">cycle</b>s <b class="bio">yo</b>u <b class="bio">canno</b>t <b class="bio">see</b>m <b class="bio">t</b>o <b class="bio">brea</b>k.
+Doctors sent you home with nothing. Or they treated the surface and called it a solution. You tried everything that was supposed to help. And still the storm inside you did not quiet. Because what was driving it was never a symptom. It was a wound.
     </p>
-    <p class="intro-p" style="margin-bottom:38px;"><b class="bio">Thi</b>s <b class="bio">i</b>s <b class="bio">wher</b>e <b class="bio">th</b>e <b class="bio">deepe</b>r <b class="bio">healin</b>g <b class="bio">wor</b>k <b class="bio">begin</b>s.</p>
+    <p class="intro-p" style="margin-bottom:38px;">This is where the deeper healing work begins.</p>
     <span class="lnk" onclick="openStory()" style="cursor:pointer;">Read Jess's story</span>
   </div>
 </section>
@@ -507,9 +601,9 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
         <div class="pkg-drop-inner">
           <div></div>
           <div class="pkg-drop-text">
-            <p><b class="bio">I</b>f <b class="bio">yo</b>u <b class="bio">hav</b>e <b class="bio">spen</b>t <b class="bio">year</b>s <b class="bio">i</b>n <b class="bio">th</b>e <b class="bio">sel</b>f <b class="bio">developmen</b>t <b class="bio">worl</b>d <b class="bio">bu</b>t <b class="bio">stil</b>l <b class="bio">fin</b>d <b class="bio">yoursel</b>f <b class="bio">replayin</b>g <b class="bio">th</b>e <b class="bio">pas</b>t <b class="bio">an</b>d <b class="bio">feelin</b>g <b class="bio">stuck</b>, <b class="bio">thi</b>s <b class="bio">sessio</b>n <b class="bio">i</b>s <b class="bio">fo</b>r <b class="bio">you</b>.</p>
-            <p><b class="bio">I</b>n <b class="bio">thi</b>s <b class="bio">9</b>0 <b class="bio">minut</b>e <b class="bio">intuitiv</b>e <b class="bio">healin</b>g <b class="bio">sessio</b>n <b class="bio">w</b>e <b class="bio">gentl</b>y <b class="bio">g</b>o <b class="bio">beneat</b>h <b class="bio">th</b>e <b class="bio">surfac</b>e, <b class="bio">workin</b>g <b class="bio">wit</b>h <b class="bio">th</b>e <b class="bio">subconscio</b>us <b class="bio">min</b>d <b class="bio">an</b>d <b class="bio">energ</b>y <b class="bio">bod</b>y <b class="bio">t</b>o <b class="bio">uncove</b>r <b class="bio">th</b>e <b class="bio">roo</b>t <b class="bio">o</b>f <b class="bio">wha</b>t <b class="bio">i</b>s <b class="bio">keepin</b>g <b class="bio">yo</b>u <b class="bio">stuck</b>.</p>
-            <p><b class="bio">Session</b>s <b class="bio">tak</b>e <b class="bio">plac</b>e <b class="bio">onlin</b>e, <b class="bio">s</b>o <b class="bio">yo</b>u <b class="bio">ca</b>n <b class="bio">sho</b>w <b class="bio">u</b>p <b class="bio">fro</b>m <b class="bio">th</b>e <b class="bio">comfor</b>t <b class="bio">an</b>d <b class="bio">safet</b>y <b class="bio">o</b>f <b class="bio">you</b>r <b class="bio">ow</b>n <b class="bio">spac</b>e, <b class="bio">wherevee</b>r <b class="bio">yo</b>u <b class="bio">ar</b>e <b class="bio">i</b>n <b class="bio">th</b>e <b class="bio">world</b>.</p>
+            <p>If you have spent years knowing something was wrong but no one could tell you what it was, this session is for you.</p>
+            <p>In this 90 minute intuitive healing session we go beneath the surface, working with the subconscious mind and energy body to uncover the root of what has been keeping you stuck.</p>
+            <p>Sessions take place online so you can show up from wherever you are in the world.</p>
           </div>
           <div class="pkg-book"><span class="btn" onclick="openM('healing')">Enquire Now</span><a class="btn-pay" href="https://www.paypal.com/ncp/payment/PGW8NZQFXLD5N" target="_blank">Pay £111 Now</a></div>
         </div>
@@ -520,16 +614,16 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
       <div class="pkg-row" onclick="tgl('igniting')">
         <div class="pkg-n">02</div>
         <div><p class="pkg-tag">8 Week Programme</p><h3 class="pkg-name">Igniting the Inner Fire</h3></div>
-        <div class="pkg-rhs"><div class="pkg-price"><small>£</small>555</div><div class="pkg-tog"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#8A9490" stroke-width="1.5"><line x1="1" y1="11" x2="11" y2="1"/><polyline points="4,1 11,1 11,8"/></svg></div></div>
+        <div class="pkg-rhs"><div class="pkg-price"><small>£</small>444</div><div class="pkg-tog"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#8A9490" stroke-width="1.5"><line x1="1" y1="11" x2="11" y2="1"/><polyline points="4,1 11,1 11,8"/></svg></div></div>
       </div>
       <div class="pkg-drop" id="dr-igniting">
         <div class="pkg-drop-inner">
           <div></div>
           <div class="pkg-drop-text">
-            <p><b class="bio">Ove</b>r <b class="bio">8 week</b>s <b class="bio">w</b>e <b class="bio">combin</b>e <b class="bio">dee</b>p <b class="bio">healin</b>g <b class="bio">wor</b>k — <b class="bio">subconscio</b>us <b class="bio">clearing</b>, <b class="bio">energ</b>y <b class="bio">healing</b>, <b class="bio">inne</b>r <b class="bio">chil</b>d <b class="bio">wor</b>k <b class="bio">an</b>d <b class="bio">nervou</b>s <b class="bio">syste</b>m <b class="bio">regulation</b> — <b class="bio">wit</b>h <b class="bio">powerfu</b>l <b class="bio">coachin</b>g <b class="bio">tha</b>t <b class="bio">help</b>s <b class="bio">yo</b>u <b class="bio">she</b>d <b class="bio">th</b>e <b class="bio">conditionin</b>g <b class="bio">o</b>f <b class="bio">a syste</b>m <b class="bio">tha</b>t <b class="bio">neve</b>r <b class="bio">fi</b>t <b class="bio">you</b>.</p>
-            <p><b class="bio">Everythin</b>g <b class="bio">take</b>s <b class="bio">plac</b>e <b class="bio">onlin</b>e, <b class="bio">s</b>o <b class="bio">n</b>o <b class="bio">matte</b>r <b class="bio">wher</b>e <b class="bio">yo</b>u <b class="bio">ar</b>e <b class="bio">i</b>n <b class="bio">th</b>e <b class="bio">world</b>, <b class="bio">yo</b>u <b class="bio">hav</b>e <b class="bio">ful</b>l <b class="bio">acces</b>s <b class="bio">t</b>o <b class="bio">thi</b>s <b class="bio">work</b>.</p>
+            <p>Over 8 weeks we combine deep healing work with powerful coaching to help you shed the conditioning of a system that was never built for you. Together we work through subconscious clearing, energy healing, inner child work and nervous system regulation.</p>
+            <p>Everything takes place online, wherever you are in the world.</p>
           </div>
-          <div class="pkg-book"><span class="btn" onclick="openM('igniting')">Enquire Now</span><a class="btn-pay" href="https://www.paypal.com/ncp/payment/YK8TAJ27Q6FBE" target="_blank">Pay £555 Now</a></div>
+          <div class="pkg-book"><span class="btn" onclick="openM('igniting')">Enquire Now</span><a class="btn-pay" href="https://www.paypal.com/ncp/payment/DCYVDHS9B6BLC" target="_blank">Pay £444 Now</a></div>
         </div>
       </div>
     </div>
@@ -544,8 +638,8 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
         <div class="pkg-drop-inner">
           <div></div>
           <div class="pkg-drop-text">
-            <p><b class="bio">Thi</b>s <b class="bio">1</b>0 <b class="bio">wee</b>k <b class="bio">1:1 mentorshi</b>p <b class="bio">i</b>s <b class="bio">fo</b>r <b class="bio">wome</b>n <b class="bio">wh</b>o <b class="bio">fee</b>l <b class="bio">thei</b>r <b class="bio">inne</b>r <b class="bio">fir</b>e <b class="bio">ignitin</b>g <b class="bio">an</b>d <b class="bio">ar</b>e <b class="bio">read</b>y <b class="bio">t</b>o <b class="bio">full</b>y <b class="bio">ste</b>p <b class="bio">int</b>o <b class="bio">thei</b>r <b class="bio">truth</b>.</p>
-            <p><b class="bio">Togethe</b>r <b class="bio">w</b>e <b class="bio">releas</b>e <b class="bio">wha</b>t <b class="bio">i</b>s <b class="bio">stil</b>l <b class="bio">holdin</b>g <b class="bio">yo</b>u <b class="bio">back</b>, <b class="bio">strengthe</b>n <b class="bio">you</b>r <b class="bio">connectio</b>n <b class="bio">t</b>o <b class="bio">you</b>r <b class="bio">intuition</b>, <b class="bio">an</b>d <b class="bio">suppor</b>t <b class="bio">yo</b>u <b class="bio">a</b>s <b class="bio">yo</b>u <b class="bio">expan</b>d <b class="bio">int</b>o <b class="bio">th</b>e <b class="bio">nex</b>t <b class="bio">versio</b>n <b class="bio">o</b>f <b class="bio">yourself</b>. <b class="bio">Al</b>l <b class="bio">session</b>s <b class="bio">ar</b>e <b class="bio">hel</b>d <b class="bio">online</b>.</p>
+            <p>This 10 week 1:1 mentorship is for women who feel their inner fire igniting and are ready to fully step into their truth.</p>
+            <p>Together we release what is still holding you back, strengthen your connection to your own knowing, and support you as you expand into the next version of yourself. All sessions are held online.</p>
           </div>
           <div class="pkg-book"><span class="btn" onclick="openM('awakening')">Enquire Now</span><a class="btn-pay" href="https://www.paypal.com/ncp/payment/NAL9FKA9PMTDJ" target="_blank">Pay £777 Now</a></div>
         </div>
@@ -566,10 +660,10 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
     <p class="ey">In my own words</p>
     <h2 class="gallery-heading">The journey that<br/><em>changed everything</em></h2>
     <p style="font-size:1rem;line-height:2.1;color:var(--mid);margin-bottom:20px;max-width:500px;">
-      <b class="bio">Fo</b>r <b class="bio">year</b>s <b class="bio">I live</b>d <b class="bio">insid</b>e <b class="bio">system</b>s <b class="bio">tha</b>t <b class="bio">wer</b>e <b class="bio">neve</b>r <b class="bio">buil</b>t <b class="bio">fo</b>r <b class="bio">mind</b>s <b class="bio">lik</b>e <b class="bio">mine</b>. <b class="bio">The</b>n <b class="bio">I los</b>t <b class="bio">a bab</b>y. <b class="bio">An</b>d <b class="bio">tha</b>t <b class="bio">los</b>s <b class="bio">cracke</b>d <b class="bio">m</b>e <b class="bio">ope</b>n <b class="bio">i</b>n <b class="bio">a wa</b>y <b class="bio">nothin</b>g <b class="bio">els</b>e <b class="bio">could</b>.
+      I spent my whole adult life searching for the answer. The unexplained physical symptoms. The exhaustion no doctor could explain. The sense of being fundamentally different from everyone around me but never being able to say why.
     </p>
     <p style="font-size:1rem;line-height:2.1;color:var(--mid);margin-bottom:36px;max-width:500px;">
-      <b class="bio">I stoppe</b>d <b class="bio">tryin</b>g <b class="bio">t</b>o <b class="bio">fi</b>x <b class="bio">mysel</b>f <b class="bio">an</b>d <b class="bio">starte</b>d <b class="bio">remembering</b> <b class="bio">wh</b>o <b class="bio">I actuall</b>y <b class="bio">was</b>. <b class="bio">Toda</b>y <b class="bio">m</b>y <b class="bio">famil</b>y <b class="bio">an</b>d <b class="bio">I trave</b>l <b class="bio">th</b>e <b class="bio">world</b>. <b class="bio">Thi</b>s <b class="bio">i</b>s <b class="bio">wha</b>t <b class="bio">healin</b>g <b class="bio">actuall</b>y <b class="bio">looks lik</b>e.
+      Through deep healing work I found what I had been searching for all along. Not a diagnosis. Not a management strategy. The root. Today my family and I travel the world. This is what healing actually looks like.
     </p>
     <span class="lnk" onclick="openStory()" style="cursor:pointer;">Read Jess's full story</span>
   </div>
@@ -625,7 +719,7 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
   </svg>
   <div class="pull-quote fi">
     <span class="pull-mark">"</span>
-    <p class="pull-text">When the emotional weight lifts and your energy changes, everything starts to move differently. Your decisions become clearer. Your confidence grows. Your life begins to expand.&#8221;</p>
+    <p class="pull-text">When you finally reach the root of it. Not the surface. Not the label. Not the story you were handed about yourself. Something shifts that nothing else has ever touched. And then everything starts to move.</p>
     <p class="pull-attr">✦ &nbsp; Jess Wakely &nbsp; ✦</p>
   </div>
 </div>
@@ -643,7 +737,7 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
 <section class="cta-band fi">
   <p class="ey" style="justify-content:center;">Ready to begin?</p>
   <h2 class="cta-title">If you feel the nudge,<br/><em>trust it.</em></h2>
-  <p class="cta-sub"><b class="bio">Th</b>e <b class="bio">fac</b>t <b class="bio">tha</b>t <b class="bio">yo</b>u <b class="bio">ar</b>e <b class="bio">her</b>e <b class="bio">mean</b>s <b class="bio">something</b>. <b class="bio">Star</b>t <b class="bio">wit</b>h <b class="bio">wha</b>t <b class="bio">call</b>s <b class="bio">t</b>o <b class="bio">yo</b>u <b class="bio">most</b>.</p>
+  <p class="cta-sub">You did not find this page by accident. Start with what calls to you.</p>
   <div class="cta-btns">
     <span class="btn" onclick="document.getElementById('packages').scrollIntoView({behavior:'smooth'})">See All Packages</span>
     <span class="btn-outline" onclick="openM('healing')">Book a Session</span>
@@ -664,13 +758,14 @@ footer{background:#2F4A35;padding:56px 80px;display:grid;grid-template-columns:1
     <button class="story-close" onclick="closeStory()">&#10005;</button>
     <p class="story-eyebrow">My story</p>
     <h2 class="story-heading">The journey that<br/><em>changed everything</em></h2>
-    <p class="story-p">For years, I lived inside systems never built for the way my mind works. Like many women with ADHD, I carried the weight of being misunderstood and masked my light until a baby loss cracked me wide open.</p>
-    <p class="story-p">That pain became the catalyst for my awakening. Through deep emotional, energetic, and nervous system work, I began transmuting my experiences into wisdom, self-acceptance, and power.</p>
-    <p class="story-p">Today, I live outside the traditional system. My family and I travel the world, worldschooling our children and moving at our own rhythm. This isn't about perfection; it's about sovereignty:</p>
-    <p class="story-p" style="color:var(--forest);font-style:italic;padding-left:24px;border-left:2px solid var(--gold);">Freedom of time and movement.<br/><br/>Freedom to live and work in a way that honours my energy, my creativity, and my purpose.</p>
-    <p class="story-p">My work is not about helping women manage ADHD. It's about helping them remember who they are beneath the label, the conditioning, and the emotional overwhelm.</p>
-    <p class="story-p">Because when a woman with ADHD learns to work with her mind, heal the wounds of her past, and reclaim the fire inside her, her entire life transforms.</p>
-    <p class="story-p" style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--charcoal);">That is the journey I guide you through.</p>
+    <p class="story-p">For as long as I can remember, I knew something was different about me. Not in a way I could explain. Just a feeling that lived in my body long before I had words for it.</p>
+    <p class="story-p">I spent years searching for answers in the wrong places. Googling symptoms at 3am because my body was doing things that did not feel right and doctors kept sending me home with nothing. Always exhausted. Brain on overdrive. Feeling things with an intensity that made me wonder if I was broken.</p>
+    <p class="story-p">I felt like the black sheep everywhere I went. My family. My friendships. Like nobody could quite reach what was actually happening inside me. I always felt different but I could never explain why.</p>
+    <p class="story-p">In my teens I found something that worked, for a while. Drugs and alcohol quieted the storm in my mind and body. But the weeks afterwards I only felt worse. Trading one kind of pain for another.</p>
+    <p class="story-p">For years I lived inside systems never built for the way my mind works. Then I lost a baby. And that loss cracked me open in a way nothing else could.</p>
+    <p class="story-p">That pain became the catalyst for my awakening. Through deep emotional, energetic and nervous system work, I began to understand what had actually been happening all along. Not a disorder to manage. A wound to heal. A sensitivity that, once understood, became my greatest gift.</p>
+    <p class="story-p">Today, my family and I travel the world, worldschooling our children and moving at our own rhythm. This is what healing actually looks like.</p>
+    <p class="story-p" style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--charcoal);">My work is not about helping women manage ADHD. It is about helping them remember who they are beneath the label, the conditioning, and the exhaustion of a lifetime spent searching.</p>
   </div>
 </div>
 
@@ -729,7 +824,7 @@ function drawStars(t){
 requestAnimationFrame(drawStars);
 
 /* PACKAGES */
-const pkgs={healing:{tag:'Single Session · 90 Minutes',name:'Healing the Inner Fire',price:'£111'},igniting:{tag:'8 Week Programme',name:'Igniting the Inner Fire',price:'£555'},awakening:{tag:'10 Week 1:1 Mentorship',name:'Awakening the Inner Fire',price:'£777'}};
+const pkgs={healing:{tag:'Single Session · 90 Minutes',name:'Healing the Inner Fire',price:'£111'},igniting:{tag:'8 Week Programme',name:'Igniting the Inner Fire',price:'£444'},awakening:{tag:'10 Week 1:1 Mentorship',name:'Awakening the Inner Fire',price:'£777'}};
 let cur=null;
 function tgl(id){const p=document.getElementById('pk-'+id);if(cur&&cur!==id)document.getElementById('pk-'+cur).classList.remove('open');p.classList.toggle('open');cur=p.classList.contains('open')?id:null;}
 function openStory(){document.getElementById('story-overlay').classList.add('open');document.body.style.overflow='hidden';}
@@ -745,6 +840,27 @@ document.querySelectorAll('.fi').forEach(el=>io.observe(el));
 /* NAV */
 window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40));
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeM();closeStory();}});
+</script>
+
+<script>
+const toggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+if(toggle && navLinks){
+  toggle.addEventListener('click',()=>{
+    const open = navLinks.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  navLinks.querySelectorAll('a, span').forEach(el=>{
+    el.addEventListener('click',()=>{
+      navLinks.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      document.body.style.overflow = '';
+    });
+  });
+}
 </script>
 </body>
 </html>
